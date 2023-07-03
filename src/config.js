@@ -9,7 +9,7 @@ import 'reveal.js/plugin/highlight/monokai.css';
 export default {
     // App Config
     app: {
-        name: 'Boilerplate',
+        name: 'Minh Tan',
     },
     // Reveal Config
     reveal: {
