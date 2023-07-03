@@ -36,7 +36,7 @@ jobs:
         uses: actions/upload-artifact@v2
         with:
           # Upload contents of public folder
-          path: 'public'
+          path: './public'
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v2
