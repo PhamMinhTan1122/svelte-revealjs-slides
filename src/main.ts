@@ -1,4 +1,5 @@
 import App    from './App.svelte';
+import './app.css';
 import config from './config';
 
 const app = new App({

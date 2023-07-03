@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
     import 'reveal.js/dist/reveal.css';
 
     import Reveal            from 'reveal.js';
