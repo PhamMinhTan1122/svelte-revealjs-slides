@@ -1,4 +1,4 @@
-# Svelte+Reveal.js Boilerplate
+# Svelte+Reveal.js Minh Tan
 
 Boilerplate App for creating Presentations with [Svelte](https://svelte.dev/) and [Reveal.js](https://revealjs.com/)
 
