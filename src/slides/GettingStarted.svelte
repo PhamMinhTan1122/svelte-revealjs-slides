@@ -1,13 +1,22 @@
-<script>
-    import { onMount } from 'svelte';
-
-    onMount(() => console.log('md'));
+<script lang="ts">
+	import Slide from "./component/slide.svelte";
+    import Code from "./component/code.svelte";
 </script>
 
-<section>
-    <h2>Getting started</h2>
-    <ul>
-        <li class="fragment fade-up">Configure your Presentation in <code>config.js</code></li>
-        <li class="fragment fade-up">Create your Slides in <code>Presentation.svelte</code></li>
-    </ul>
-</section>
+<Slide animate>
+	<Code id="code" lines>
+		{`
+            function void(){}
+        `}
+	</Code>
+</Slide>
+
+<Slide animate>
+	<Code id="code" lines>
+		{`
+            function void(){
+                console.log("Hello World")
+            }
+        `}
+	</Code>
+</Slide>

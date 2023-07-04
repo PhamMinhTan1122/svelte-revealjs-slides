@@ -1,0 +1,15 @@
+:root {
+	/* --r-main-font: 'Lora';
+	--r-heading-font: 'Lora'; */
+	/* --r-code-font: 'Lora'; */
+	--r-link-color: aqua;
+	--r-link-color-hover: aqua;
+}
+.hljs-tilte,
+.hljs-keyword {
+	font-weight: normal;
+}
+.reveal pre,
+.reveal code {
+	overflow: hidden !important;
+}
