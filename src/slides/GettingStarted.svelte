@@ -1,8 +1,12 @@
 <script lang="ts">
-	import Slide from "./component/slide.svelte";
-    import Code from "./component/code.svelte";
+	import Slide from "../component/slide.svelte";
+	import Code from "../component/code.svelte";
+	import Timer from "../component/timer.svelte";
 </script>
 
+<Slide>
+	<Timer />
+</Slide>
 <Slide animate>
 	<Code id="code" lines>
 		{`
@@ -10,7 +14,16 @@
         `}
 	</Code>
 </Slide>
-
+<section>
+	<h3>The Lorenz Equations</h3>
+	{`
+    \\begin{align}
+  \\dot{x} & = \\sigma(y-x) \\\\
+  \\dot{y} & = \\rho x - y - xz \\\\
+  \\dot{z} & = -\\beta z + xy
+  \\end{align}
+      `}
+</section>
 <Slide animate>
 	<Code id="code" lines>
 		{`
@@ -20,3 +33,234 @@
         `}
 	</Code>
 </Slide>
+<section data-auto-animate data-auto-animate-unmatched="fade">
+	<h3>Auto-Animate Example</h3>
+	<p>This will fade out</p>
+	<pre data-id="code"><code data-line-numbers class="hljs" data-trim>
+    {@html `
+  <script>
+    let count = 0;
+  </script>
+  <p>{count}</p>
+  <p>
+  <button on:click={() => count += 1}>Increment</button>
+  </p>
+  <p>
+  <button on:click={() => count -= 1}>Decrement</button>
+  </p>
+    `}
+    </code></pre>
+</section>
+<section data-auto-animate data-auto-animate-unmatched="fade">
+	<h3>Auto-Animate Example</h3>
+	<p style="opacity: 0.2; margin-top: 100px;">This will fade out</p>
+	<p>This element is unmatched</p>
+	<pre data-id="code"><code data-line-numbers class="hljs" data-trim>
+  {`
+    function Example() {
+      New line!
+      const [count, setCount] = useState(0);
+    }
+  `}
+  </code></pre>
+</section>
+
+<section data-auto-animate>
+	<p
+		data-id="text-props"
+		style="background: #555; line-height: 1em; letter-spacing: 0em;"
+	>
+		Line Height & Letter Spacing
+	</p>
+</section>
+<section data-auto-animate>
+	<p
+		data-id="text-props"
+		style="background: #555; line-height: 3em; letter-spacing: 0.2em;"
+	>
+		Line Height & Letter Spacing
+	</p>
+</section>
+
+<section>
+	<section data-auto-animate>
+		<pre data-id="code"><code data-line-numbers class="hljs" data-trim>
+					{@html `
+					<script>
+					let count = 0;
+
+					function handleClick() {
+							count += 1;
+					}
+					</script>
+
+					<button on:click={handleClick}>
+					Clicked {count} {count === 1 ? 'time' : 'times'}
+					</button>
+					`}
+    </code></pre>
+	</section>
+	<section data-auto-animate>
+		<pre data-id="code"><code data-line-numbers class="hljs" data-trim>
+					{@html `
+						<script>
+						function handleClick() {
+								alert('no more alerts')
+						}
+						</script>
+
+						<button on:click|once={handleClick}>
+						Click me
+						</button>
+						`}
+    </code></pre>
+	</section>
+	<section data-auto-animate>
+		<pre data-id="code"><code data-line-numbers class="hljs" data-trim>
+    {@html `
+						<script>
+						function handleClick() {
+								// A comment
+								alert('no more alerts')
+						}
+						</script>
+
+			      <!-- Event modifiers -->
+						<button on:click|once={handleClick}>
+						Click me
+						</button>
+    `}
+    </code></pre>
+	</section>
+</section>
+
+<section>
+	<section data-auto-animate>
+		<h3>Swapping list items</h3>
+		<ul>
+			<li>One</li>
+			<li>Two</li>
+			<li>Three</li>
+		</ul>
+	</section>
+	<section data-auto-animate>
+		<h3>Swapping list items</h3>
+		<ul>
+			<li>Two</li>
+			<li>One</li>
+			<li>Three</li>
+		</ul>
+	</section>
+	<section data-auto-animate>
+		<h3>Swapping list items</h3>
+		<ul>
+			<li>Two</li>
+			<li>Three</li>
+			<li>One</li>
+		</ul>
+	</section>
+</section>
+
+<section data-auto-animate style="height: 600px">
+	<h3 style="opacity: 0.3; font-size: 18px;">SLIDE 1</h3>
+	<h2 data-id="title" style="margin-top: 260px;">Animate Anything</h2>
+	<div
+		data-id="1"
+		style="background: white; position: absolute; top: 150px; left: 16%; width: 60px; height: 60px;"
+	/>
+	<div
+		data-id="2"
+		style="background: white; position: absolute; top: 150px; left: 36%; width: 60px; height: 60px;"
+	/>
+	<div
+		data-id="3"
+		style="background: white; position: absolute; top: 150px; left: 56%; width: 60px; height: 60px;"
+	/>
+	<div
+		data-id="4"
+		style="background: white; position: absolute; top: 150px; left: 76%; width: 60px; height: 60px;"
+	/>
+</section>
+<section data-auto-animate style="height: 600px">
+	<h3 style="opacity: 0.3; font-size: 18px;">SLIDE 2</h3>
+	<h2 data-id="title" style="margin-top: 500px">With Auto Animate</h2>
+	<div
+		data-id="1"
+		style="background: cyan; position: absolute; bottom: 190px; left: 16%; width: 60px; height: 60px;"
+	/>
+	<div
+		data-id="2"
+		style="background: magenta; position: absolute; bottom: 190px; left: 36%; width: 60px; height: 160px;"
+	/>
+	<div
+		data-id="3"
+		style="background: yellow; position: absolute; bottom: 190px; left: 56%; width: 60px; height: 260px;"
+	/>
+	<div
+		data-id="4"
+		style="background: red; position: absolute; bottom: 190px; left: 76%; width: 60px; height: 360px;"
+	/>
+</section>
+<section data-auto-animate style="height: 600px">
+	<h3 style="opacity: 0.3; font-size: 18px;">SLIDE 3</h3>
+	<h2 data-id="title" style="margin-top: 500px; opacity: 0;">
+		With Auto Animate
+	</h2>
+	<div
+		data-id="1"
+		style="background: cyan; position: absolute; top: 50%; left: 50%; width: 400px; height: 400px; margin: -200px 0 0 -200px; border-radius: 400px;"
+	/>
+	<div
+		data-id="2"
+		style="background: magenta; position: absolute; top: 50%; left: 50%; width: 300px; height: 300px; margin: -150px 0 0 -150px; border-radius: 400px;"
+	/>
+	<div
+		data-id="3"
+		style="background: yellow; position: absolute; top: 50%; left: 50%; width: 200px; height: 200px; margin: -100px 0 0 -100px; border-radius: 400px;"
+	/>
+	<div
+		data-id="4"
+		style="background: red; position: absolute; top: 50%; left: 50%; width: 100px; height: 100px; margin: -50px 0 0 -50px; border-radius: 400px;"
+	/>
+</section>
+<section data-auto-animate style="height: 600px">
+	<h3 style="opacity: 0.3; font-size: 18px;">SLIDE 3</h3>
+	<h2 data-id="title" style="margin-top: 500px; opacity: 0;">
+		With Auto Animate
+	</h2>
+	<div
+		data-id="1"
+		style="background: red; position: absolute; top: 250px; left: 16%; width: 60px; height: 60px;"
+	/>
+	<div
+		data-id="2"
+		style="background: yellow; position: absolute; top: 250px; left: 36%; width: 60px; height: 60px;"
+	/>
+	<div
+		data-id="3"
+		style="background: magenta; position: absolute; top: 250px; left: 56%; width: 60px; height: 60px;"
+	/>
+	<div
+		data-id="4"
+		style="background: cyan; position: absolute; top: 250px; left: 76%; width: 60px; height: 60px;"
+	/>
+</section>
+
+<section data-auto-animate data-auto-animate-id="a">
+	<h2>data-auto-animate-id="a"</h2>
+	<h3>A1</h3>
+</section>
+<section data-auto-animate data-auto-animate-id="a">
+	<h2>data-auto-animate-id="a"</h2>
+	<h3>A1</h3>
+	<h3>A2</h3>
+</section>
+<section data-auto-animate data-auto-animate-id="b">
+	<h2>data-auto-animate-id="b"</h2>
+	<h3>B1</h3>
+</section>
+<section data-auto-animate data-auto-animate-id="b">
+	<h2>data-auto-animate-id="b"</h2>
+	<h3>B1</h3>
+	<h3>B2</h3>
+</section>
