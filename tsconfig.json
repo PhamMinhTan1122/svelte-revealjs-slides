@@ -1,6 +1,19 @@
 {
+<<<<<<< HEAD
   "extends": "@tsconfig/svelte/tsconfig.json",
 
   "include": ["src/**/*"],
   "exclude": ["node_modules/*", "__sapper__/*", "public/*"]
 }
+=======
+    "extends": "@tsconfig/svelte/tsconfig.json",
+    "include": [
+        "src/**/*"
+    ],
+    "exclude": [
+        "node_modules/*",
+        "__sapper__/*",
+        "public/*"
+    ]
+}
+>>>>>>> e66663ea33fc9e13cfee46a74145cd0c79536bb3
