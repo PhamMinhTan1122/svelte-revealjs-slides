@@ -1,5 +1,7 @@
 import sveltePreprocess from 'svelte-preprocess';
 
 export default {
-  preprocess: sveltePreprocess()
+    // Consult https://github.com/sveltejs/svelte-preprocess
+    // for more information about preprocessors
+    preprocess: sveltePreprocess()
 };
