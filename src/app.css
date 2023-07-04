@@ -2,20 +2,15 @@
 @tailwind components;
 @tailwind utilities;
 
-#app {
-    width: 100%;
-    margin: 0 auto;
-    text-align: center;
-    height: 100vh;
-  }
+
   
 :root {
 	/* --r-main-font: 'Lora';
 	--r-heading-font: 'Lora'; */
 	/* --r-code-font: 'Lora'; */
-	--r-link-color: red;
-	--r-link-color-hover: red;
-    --r-main-color: red;
+	--r-link-color: red !important;
+	--r-link-color-hover: red !important;
+    --r-main-color: red !important;
 }
 .hljs-tilte,
 .hljs-keyword {
@@ -24,4 +19,7 @@
 .reveal pre,
 .reveal code {
 	overflow: hidden !important;
+}
+.reveal pre {
+	box-shadow: none;
 }

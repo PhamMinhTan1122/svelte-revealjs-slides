@@ -1,7 +1,13 @@
+import { vitePreprocess } from '@sveltejs/vite-plugin-svelte';
 import sveltePreprocess from 'svelte-preprocess';
-export default {
+const config = {
     // Consult https://github.com/sveltejs/svelte-preprocess
     // for more information about preprocessors
-    preprocess: sveltePreprocess(
-    )
+    preprocess: [
+        vitePreprocess(),
+        sveltePreprocess({
+            postcss: true
+        })
+    ]
 };
+export default config
