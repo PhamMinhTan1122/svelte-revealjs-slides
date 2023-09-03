@@ -1,9 +1,7 @@
 <script>
-    import Title          from './slides/Title.svelte';
-    import GettingStarted from './slides/GettingStarted.svelte';
-
+	import Title from "./slides/Title.svelte";
+	import GettingStarted from "./slides/GettingStarted.svelte";
 </script>
 
-<Title/>
-<GettingStarted/>
-
+<Title />
+<GettingStarted />

@@ -20,7 +20,7 @@ export default {
         hash: true,
         autoAnimateEasing: 'ease',
         autoAnimateDuration: 1,
-        controls: true,
+        controls: false,
         progress: true,
         touch: true,
         transition: 'convex',

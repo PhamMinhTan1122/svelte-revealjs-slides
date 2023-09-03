@@ -8,9 +8,9 @@
 	/* --r-main-font: 'Lora';
 	--r-heading-font: 'Lora'; */
 	/* --r-code-font: 'Lora'; */
-	--r-link-color: red !important;
-	--r-link-color-hover: red !important;
-    --r-main-color: red !important;
+	--r-link-color: blue !important;
+	--r-link-color-hover: blue !important;
+  --r-main-color: blue !important;
 }
 .hljs-tilte,
 .hljs-keyword {
