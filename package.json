@@ -1,8 +1,9 @@
 {
   "name": "svelte-reveal",
+  "homepage": "https://phamminhtan1122.github.io/svelte-revealjs-slides/",
   "repository": {
-    "url": "https://phamminhtan1122.github.io/svelte-revealjs-slides",
-  }
+    "url": "https://phamminhtan1122.github.io/svelte-revealjs-slides"
+  },
   "private": true,
   "version": "2.0.0",
   "type": "module",

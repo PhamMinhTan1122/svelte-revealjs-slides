@@ -1,4 +1,4 @@
-<script lang="ts">
+<script>
     import 'reveal.js/dist/reveal.css';
     import Router from './component/Router.svelte';
 
@@ -13,7 +13,7 @@
         path: '/', component: Home
       },
       {
-        path: '/do_an_mon_tin_1', component: DoAnMonTin_1
+        path: '/svelte-revealjs-slides/do_an_mon_tin_1', component: DoAnMonTin_1
       },
       {
         path: '/more', component: More 
@@ -26,4 +26,4 @@
 </svelte:head>
 
 
-<Router {routes} {app} {reveal} />
+<Router basepath="/svelte-revealjs-slides" {routes} {app} {reveal} />
