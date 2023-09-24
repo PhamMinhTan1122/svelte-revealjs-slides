@@ -5,12 +5,13 @@
 
   
 :root {
-	/* --r-main-font: 'Lora';
-	--r-heading-font: 'Lora'; */
-	/* --r-code-font: 'Lora'; */
-	--r-link-color: blue !important;
-	--r-link-color-hover: blue !important;
-  --r-main-color: blue !important;
+	--r-main-font: 'Google Sans';
+	--r-heading-font: 'Google Sans';
+	/* --r-code-font: 'Google Sans'; */
+	--r-link-color: black !important;
+	--r-link-color-hover: black !important;
+  --r-main-color: black !important;
+  --r-background-color: white !important;
 }
 .hljs-tilte,
 .hljs-keyword {

@@ -1,26 +1,29 @@
 <script lang="ts">
     import 'reveal.js/dist/reveal.css';
-
-    import Reveal            from 'reveal.js';
-    import { onMount, tick } from 'svelte';
-    import Presentation      from './Presentation.svelte';
+    import Router from './component/Router.svelte';
 
     export let app;
     export let reveal;
 
-    onMount(async () => {
-        await tick();
-        const deck = new Reveal(reveal);
-        deck.initialize();
-    });
+    import Home from './routes/Home.svelte';
+    import DoAnMonTin_1 from './routes/do_an_mon_tin_1/main.svelte';
+    import More from './routes/more/main.svelte'
+    const routes = [
+      {
+        path: '/', component: Home
+      },
+      {
+        path: '/do_an_mon_tin_1', component: DoAnMonTin_1
+      },
+      {
+        path: '/more', component: More 
+      }
+    ]
 </script>
 
 <svelte:head>
     <title>{app.name}</title>
 </svelte:head>
 
-<div class="reveal">
-    <div class="slides">
-        <Presentation/>
-    </div>
-</div>
+
+<Router {routes} {app} {reveal} />
