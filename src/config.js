@@ -4,7 +4,7 @@ import MathReveal from 'reveal.js/plugin/math/math';
 import RevealNotes from 'reveal.js/plugin/notes/notes';
 
 // Import theme
-import 'reveal.js/dist/theme/black.css';
+import 'reveal.js/dist/theme/white.css';
 
 // Import CSS for plugins
 import 'reveal.js/plugin/highlight/monokai.css';
