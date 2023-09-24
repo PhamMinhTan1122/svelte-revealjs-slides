@@ -4,6 +4,16 @@
     import Slide from "../component/slide.svelte";
     import Timer from "../component/timer.svelte";
 </script>
+<Slide animate> 
+  <video controls>
+    <source src="../assets/intro.mp4" type="video/mp4"/>
+    <track kind="captions"> 
+  </video>
+  <!-- <iframe  -->
+  <!--   data-src="https://c2bda-my.sharepoint.com/personal/chiasedungchung001_leducchinh_com/_layouts/15/embed.aspx?UniqueId=bbc8b69e-62c4-4bcd-a14f-b7db3a18b1e5&embed=%7B%22ust%22%3Atrue%2C%22hv%22%3A%22CopyEmbedCode%22%7D&referrer=StreamWebApp&referrerScenario=EmbedDialog.Create" width="640" height="360" frameborder="0" scrolling="no" allowfullscreen title="2022-10-16_22-37-24.mov" -->
+  <!--   data-preload> -->
+  <!-- </iframe> -->
+</Slide>
 
 <Slide animate>
 	<Code id="code" lines>
