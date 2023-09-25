@@ -26,8 +26,8 @@
   <nav>
     <ul>
       <li>
-        <a href="`/do_an_mon_tin_1" on:click|preventDefault={() => navigateTo('/svelte-revealjs-slides/do_an_mon_tin_1')}> do_an_mon_tin_1 </a>
-        <a href="/svelte-revealjs-slides/more" on:click|preventDefault={() => navigateTo('/svelte-revealjs-slides/more')}> more </a>
+        <a href="/do_an_mon_tin_1" on:click|preventDefault={() => navigateTo('/do_an_mon_tin_1')}> do_an_mon_tin_1 </a>
+        <a href="/more" on:click|preventDefault={() => navigateTo('/more')}> more </a>
       </li>
     </ul>
   </nav>
@@ -35,10 +35,10 @@
 <div class="reveal">
     <div class="slides">
         {#each routes as { path, component }}
-          {#if path === currentRoute}
-            <svelte:component this={component} {app} {reveal} />
-          {/if}
-        {/each}
+    {#if path === currentRoute}
+      <svelte:component this={component} {app} {reveal} />
+    {/if}
+  {/each}
     </div>
 </div>
 <style>

@@ -13,7 +13,7 @@
         path: '/', component: Home
       },
       {
-        path: '/svelte-revealjs-slides/do_an_mon_tin_1', component: DoAnMonTin_1
+        path: '/do_an_mon_tin_1', component: DoAnMonTin_1
       },
       {
         path: '/more', component: More 
@@ -26,4 +26,4 @@
 </svelte:head>
 
 
-<Router basepath="/svelte-revealjs-slides" {routes} {app} {reveal} />
+<Router {routes} {app} {reveal} />

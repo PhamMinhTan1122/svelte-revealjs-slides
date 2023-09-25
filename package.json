@@ -11,11 +11,11 @@
     "dev": "vite dev",
     "build": "vite build",
     "preview": "vite preview",
-    "check": "svelte-check"
+    "check": "svelte-check",
+    "deploy": "vite build && gh-pages -d dist"
   },
   "devDependencies": {
     "@rollup/plugin-typescript": "^11.0.0",
-    "@roxi/routify": "^2.18.12",
     "@sveltejs/adapter-static": "^2.0.2",
     "@sveltejs/vite-plugin-svelte": "^1.0.1",
     "@tsconfig/svelte": "^3.0.0",

@@ -9,5 +9,11 @@ export default defineConfig({
   },
   plugins: [svelte({
     /* plugin options */
-  })]
+  })],
+  build: {
+    router: {
+      base: '/svelte-revealjs-slides/',
+      generateStaticRoutes: true 
+    }
+  }
 })
