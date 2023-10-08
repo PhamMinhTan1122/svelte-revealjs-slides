@@ -21,7 +21,7 @@
     "@tsconfig/svelte": "^3.0.0",
     "@types/reveal.js": "^4.4.2",
     "autoprefixer": "^10.4.13",
-    "postcss": "^8.4.19",
+    "postcss": "^8.4.31",
     "svelte": "^3.49.0",
     "svelte-check": "^3.0.0",
     "svelte-preprocess": "^5.0.0",
