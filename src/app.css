@@ -3,10 +3,17 @@
 @tailwind utilities;
 
 
-  
+@font-face {
+  font-family: '1FTV Camaro';
+  src: local('1FTV Camaro'), url('../public/fonts/1FTV-Camaro.otf') format('truetype');
+}
+@font-face{
+  font-family: 'IBM Plex Serif Regular';
+ src: local('IBM Plex Serif Regular'), url('../public/fonts/IBMPlexSerif-Regular.ttf');
+}
 :root {
 	--r-main-font: '1FTV Camaro';
-	--r-heading-font: 'Google Sans';
+	--r-heading-font: 'IBM Plex Serif Regular';
 	/* --r-code-font: 'Google Sans'; */
 	--r-link-color: blue !important;
 	--r-link-color-hover: blue !important;

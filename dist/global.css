@@ -1,0 +1,8 @@
+@font-face {
+  font-family: '1FTV Camaro';
+  src: local('1FTV Camaro'), url('./fonts/1FTV Camaro.otf') format('truetype');
+}
+@font-face{
+  font-family: 'Google Sans';
+  src: local('Google Sans'), url('../public/fonts/IBMPlexSerif-Regular.ttf') format('truetype');
+}

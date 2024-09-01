@@ -6,6 +6,8 @@
     import RevealNotes from 'reveal.js/plugin/notes/notes';
     // import slides
     import Slide_1 from "./subs/sl_1.svelte"
+    import Slide_2 from "./subs/sl_2.svelte"
+    import Slide_3 from "./subs/sl_3.svelte"
     // Import theme
     import 'reveal.js/dist/theme/white.css';
 
@@ -36,4 +38,6 @@
 </script>
 <RevealPresentation {config}>
 <Slide_1/>
+<Slide_2/>
+<Slide_3/>
 </RevealPresentation>
