@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
   import { onMount } from 'svelte';
   export let routes = [];
   export let app;
@@ -22,7 +22,7 @@
   }
 </script>
 
-{#if currentRoute=='/'}
+{#if currentRoute=='/home'}
   <nav>
     <ul>
       <li>
