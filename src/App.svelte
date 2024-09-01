@@ -21,7 +21,7 @@
       },
       {
         path: '/more', component: More 
-      }
+      },
     ]
 </script>
 
